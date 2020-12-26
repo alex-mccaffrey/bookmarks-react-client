@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './BookmarkApp.css';
-import BookmarkList from '../bookmarksList/BookmarksList';
-import Fab from './fab/Fab';
+import BookmarksList from '../bookmarksList/BookmarksList';
+import Fab from '../fab/Fab';
 
 class BookmarkApp extends Component {
   render() {
     return (
       <div className="bookmarkApp">
         <h2>Bookmarks</h2>
-        <BookmarkList bookmarks={this.props.bookmarks}/>
+        <BookmarksList bookmarks={this.props.bookmarks}/>
         <Fab/>
       </div>
     );

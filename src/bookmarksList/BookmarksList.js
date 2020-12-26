@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './BookmarkList.css';
+import './BookmarksList.css';
 import Bookmark from '../bookmark/Bookmark';
 
-class BookmarkList extends Component {
+class BookmarksList extends Component {
   render() {
     const bookmarks = this
           .props
@@ -16,8 +16,8 @@ class BookmarkList extends Component {
   }
 }
 
-BookmarkList.defaultProps = {
+BookmarksList.defaultProps = {
   bookmarks: []
 };
 
-export default BookmarkList;
+export default BookmarksList;
